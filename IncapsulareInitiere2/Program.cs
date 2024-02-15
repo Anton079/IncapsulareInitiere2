@@ -7,11 +7,86 @@ internal class program
 {
     private static void Main(string[] args)
     {
-        
+        Exemple();
     }
 
     public static void Exemple()
     {
+        Pisica pisica1 = new Pisica();
+        pisica1.varstaAni = 5;
+        pisica1.inaltimeCm = 30;
+        pisica1.rasaPisica = "Sfinx";
+
+        Pisica pisica2 = new Pisica();
+        pisica2.varstaAni = 3;
+        pisica2.inaltimeCm = 25;
+        pisica2.rasaPisica = "Persana";
+
+        Pisica pisica3 = new Pisica();
+        pisica3.varstaAni = 7;
+        pisica3.inaltimeCm = 20;
+        pisica3.rasaPisica = "Maine Coon";
+
+        Pisica pisica4 = new Pisica();
+        pisica4.varstaAni = 2;
+        pisica4.inaltimeCm = 22;
+        pisica4.rasaPisica = "Siameza";
+
+        Pisica pisica5 = new Pisica();
+        pisica5.varstaAni = 4;
+        pisica5.inaltimeCm = 18;
+        pisica5.rasaPisica = "Birmaneza";
+
+
+        List<Pisica> pisiciLista = new List<Pisica>();
+        pisiciLista.Add(pisica1);
+        pisiciLista.Add(pisica2);
+        pisiciLista.Add(pisica3);
+        pisiciLista.Add(pisica4);
+        pisiciLista.Add(pisica5);
+
+        foreach (Pisica pisica in pisiciLista)
+        {
+            Console.WriteLine(pisica.PisicaInfo());
+        }
+        //=========
+        Caine caine1 = new Caine();
+        caine1.varsta = 5;
+        caine1.inaltime = 30;
+        caine1.rasa = "Labrador";
+
+        Caine caine2 = new Caine();
+        caine2.varsta = 3;
+        caine2.inaltime = 25;
+        caine2.rasa = "Bulldog";
+
+        Caine caine3 = new Caine();
+        caine3.varsta = 7;
+        caine3.inaltime = 20;
+        caine3.rasa = "Ciobanesc German";
+
+        Caine caine4 = new Caine();
+        caine4.varsta = 8;
+        caine4.inaltime = 30;
+        caine4.rasa = "Canis";
+
+        Caine caine5 = new Caine();
+        caine5.varsta = 9;
+        caine5.inaltime = 24;
+        caine5.rasa = "Amstaf";
+
+        List<Caine> cainiLista = new List<Caine>();
+        cainiLista.Add(caine1);
+        cainiLista.Add(caine2);
+        cainiLista.Add(caine3);
+        cainiLista.Add(caine4);
+        cainiLista.Add(caine5);
+
+        foreach (Caine caine in cainiLista)
+        {
+            Console.WriteLine(caine.CaineInfo());
+        }
+        //=======
         Copaci copac1 = new Copaci();
         copac1.varsta = 20;
         copac1.inaltime = 15;
