@@ -18,7 +18,7 @@ namespace IncapsulareInitiere2
             text += "Pret" + pret + "\n";
             text += "Gramaj" + gramaj + "\n";
             text += "Tip Dulciuri" + tipDulce + "\n";
-            return text;
+            return text;//
         }
     }
 }
